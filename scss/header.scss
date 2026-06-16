@@ -2,32 +2,7 @@
 
 .d-header {
   box-shadow: none;
-  background: #000000 !important;
-  background-color: #000000 !important;
-  border-bottom: 1px solid #16161a !important;
-
-  // Local overrides to make header elements always light/readable on black
-  --primary: #ffffff !important;
-  --primary-medium: rgba(255, 255, 255, 0.7) !important;
-  --primary-low-mid: rgba(255, 255, 255, 0.4) !important;
-  --primary-low: rgba(255, 255, 255, 0.15) !important;
-  --header_primary: #ffffff !important;
-  --header_primary-medium: rgba(255, 255, 255, 0.7) !important;
-  --header_primary-low-mid: rgba(255, 255, 255, 0.4) !important;
-  --header_background: #000000 !important;
-
-  .d-icon {
-    color: rgba(255, 255, 255, 0.85) !important;
-  }
-
-  .title a,
-  .title h1 {
-    color: #ffffff !important;
-  }
-
-  .badge-notification {
-    border-color: #000000 !important;
-  }
+  background: var(--background-color);
 }
 
 .search-menu .search-input,
@@ -99,14 +74,14 @@ body.invite-page,
 body.password-reset-page,
 body.activate-account-page {
   .d-header {
-    background: #000000 !important;
+    background: var(--background-color);
   }
 }
 
 .header-dropdown-toggle.chat-header-icon .icon .chat-channel-unread-indicator {
-  border-color: #000000 !important;
+  border-color: var(--background-color);
 }
 
 .d-header-icons .badge-notification {
-  border-color: #000000 !important;
+  border-color: var(--background-color);
 }
