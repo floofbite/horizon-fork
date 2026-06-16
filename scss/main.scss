@@ -14,15 +14,16 @@ html:not(:has(.has-full-page-chat)) {
 
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color) !important;
 
   @include viewport.until(sm) {
-    background-color: var(--d-content-background);
+    background-color: var(--d-content-background) !important;
   }
 
   @include viewport.from(lg) {
     &.account-created-page,
     &.activate-account-page {
-      background: var(--background-color);
+      background: var(--background-color) !important;
     }
   }
 }
