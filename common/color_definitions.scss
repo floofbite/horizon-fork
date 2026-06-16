@@ -5,7 +5,7 @@ html {
   // Background Colors
   --background-color: light-dark(
     oklch(from #{$tertiary} 96% calc(c * 0.125) h),
-    oklch(from #{$tertiary} 10% 0.025 h)
+    #000000
   ) !important;
   --d-content-background: light-dark(
     oklch(from #{$secondary} calc(2 * l) c h),

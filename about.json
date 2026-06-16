@@ -22,13 +22,13 @@
     },
     "Horizon Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "595bca",
       "tertiary-med-or-tertiary": "595bca",
       "selected": "3b3e56",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "333548"
+      "hover": "1e1e25"
     },
     "Royal": {
       "primary": "1A1A1A",
@@ -42,13 +42,13 @@
     },
     "Royal Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "1F7BC1",
       "tertiary-med-or-tertiary": "1F7BC1",
       "selected": "3a455f",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "323B4E"
+      "hover": "1e1e25"
     },
     "Clover": {
       "primary": "1A1A1A",
@@ -62,13 +62,13 @@
     },
     "Clover Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "39845B",
       "tertiary-med-or-tertiary": "39845B",
       "selected": "47594e",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "3C4A40"
+      "hover": "1e1e25"
     },
     "Lily": {
       "primary": "1A1A1A",
@@ -82,13 +82,13 @@
     },
     "Lily Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "cc338c",
       "tertiary-med-or-tertiary": "cc338c",
       "selected": "5f3e4e",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "4E3640"
+      "hover": "1e1e25"
     },
     "Violet": {
       "primary": "1A1A1A",
@@ -102,13 +102,13 @@
     },
     "Violet Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "9b15de",
       "tertiary-med-or-tertiary": "9b15de",
       "selected": "4c385c",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "40314C"
+      "hover": "1e1e25"
     },
     "Marigold": {
       "primary": "1A1A1A",
@@ -122,13 +122,13 @@
     },
     "Marigold Dark": {
       "primary": "ffffff",
-      "secondary": "1A1A1A",
+      "secondary": "000000",
       "tertiary": "d3881f",
       "tertiary-med-or-tertiary": "d3881f",
       "selected": "6c5b49",
-      "header_background": "1A1A1A",
+      "header_background": "151519",
       "header_primary": "ffffff",
-      "hover": "584B3E"
+      "hover": "1e1e25"
     }
   },
   "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
