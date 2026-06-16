@@ -2,9 +2,11 @@
 
 // temp separate file to avoid merge hell… to be distributed later
 @include viewport.until(lg) {
-  html,
-  .d-header {
+  html {
     background-color: var(--d-content-background);
+  }
+  .d-header {
+    background-color: #000000 !important;
   }
 }
 
