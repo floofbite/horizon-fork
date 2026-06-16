@@ -170,9 +170,8 @@
     }
   }
 
-  // Visual hierarchy for sub-navigation (under user profile content area or user secondary navigation)
-  .user-content,
-  .user-navigation-secondary {
+  // Visual hierarchy for sub-navigation (under user profile content area)
+  .user-content {
     .nav-pills {
       border: none !important;
       border-bottom: none !important;
@@ -184,21 +183,6 @@
           padding: 0.3em 0.85em !important;
           font-size: 0.825em !important;
         }
-      }
-    }
-  }
-
-  // In case .user-navigation-secondary is the nav-pills list itself
-  .nav-pills.user-navigation-secondary {
-    border: none !important;
-    border-bottom: none !important;
-    gap: 0.2em !important;
-
-    > li {
-      > a,
-      > button {
-        padding: 0.3em 0.85em !important;
-        font-size: 0.825em !important;
       }
     }
   }
