@@ -176,13 +176,13 @@
     .nav-pills {
       border: none !important;
       border-bottom: none !important;
-      gap: 0.2em !important;
+      gap: 0.25em !important;
 
       > li {
         > a,
         > button {
-          padding: 0.3em 0.85em !important;
-          font-size: 0.825em !important;
+          padding: 0.3em 0.8em !important;
+          font-size: 0.9em !important;
         }
       }
     }
@@ -192,13 +192,13 @@
   .nav-pills.user-navigation-secondary {
     border: none !important;
     border-bottom: none !important;
-    gap: 0.2em !important;
+    gap: 0.25em !important;
 
     > li {
       > a,
       > button {
-        padding: 0.3em 0.85em !important;
-        font-size: 0.825em !important;
+        padding: 0.3em 0.8em !important;
+        font-size: 0.9em !important;
       }
     }
   }
