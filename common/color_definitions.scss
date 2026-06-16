@@ -5,11 +5,11 @@ html {
   // Background Colors
   --background-color: light-dark(
     oklch(from #{$tertiary} 96% calc(c * 0.125) h),
-    oklch(from #{$tertiary} 10% 0.025 h)
+    #0d0d11
   ) !important;
   --d-content-background: light-dark(
     oklch(from #{$secondary} calc(2 * l) c h),
-    oklch(from #{$secondary} l c h)
+    #151519
   ) !important;
 
   // HeaderColors
@@ -25,7 +25,7 @@ html {
   // Sidebar Colors
   --d-sidebar-border-color: light-dark(
     oklch(from #{$tertiary} 88% calc(c * 0.25) h),
-    oklch(from #{$tertiary} calc(l * 0.7) calc(c * 0.25) h)
+    #38383e
   ) !important;
   --d-sidebar-link-color: light-dark(
     oklch(from #{$tertiary} calc(l * 0.8) calc(c * 0.25) h),
@@ -94,13 +94,24 @@ html {
   --d-sidebar-highlight-color: var(--primary) !important;
   --d-sidebar-highlight-background: var(--d-selected) !important;
   --d-sidebar-section-link-icon-size: 1em !important;
-  --d-hover: oklch(from var(--d-selected) l c h / 0.75) !important;
+  --d-hover: light-dark(
+    oklch(from var(--d-selected) l c h / 0.75),
+    #1e1e25
+  ) !important;
   --d-input-bg-color: var(--d-content-background) !important;
   --discourse_id-text: var(--accent-text-color) !important;
   --discourse_id-text-hover: var(--accent-text-color) !important;
   --discourse_id-icon: var(--accent-text-color) !important;
   --discourse_id-icon-hover: var(--accent-text-color) !important;
   --discourse_id-border: var(--discourse_id-background) !important;
+
+  // Custom Border Color overrides for Dark Mode
+  --d-border-color: light-dark(var(--primary-low-mid), #38383e) !important;
+  --primary-low: light-dark(var(--primary-low), #38383e) !important;
+  --primary-low-mid: light-dark(var(--primary-low-mid), #38383e) !important;
+  --primary-100: light-dark(var(--primary-100), #38383e) !important;
+  --primary-200: light-dark(var(--primary-200), #38383e) !important;
+  --primary-300: light-dark(var(--primary-300), #38383e) !important;
 }
 
 .uc-modernize-foundation-theme {
