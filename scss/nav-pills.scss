@@ -1,0 +1,179 @@
+.list-controls {
+  position: sticky;
+  top: var(--header-offset);
+  background: var(--d-content-background);
+  z-index: z("base") + 1;
+  padding: 1rem 0 0 0;
+  max-width: unset;
+  border-top-left-radius: var(--d-border-radius-large);
+  border-top-right-radius: var(--d-border-radius-large);
+
+  .navigation-container {
+    gap: 1rem;
+
+    .category-breadcrumb {
+      order: 1;
+    }
+  }
+
+  .combo-box .combo-box-header {
+    // needs more specificity than just in the button file
+    background-color: var(--secondary);
+    border-radius: var(--d-border-radius);
+    border: 1px solid var(--primary-300);
+
+    &:hover {
+      border: 1px solid var(--accent-color);
+    }
+
+    &:focus-visible {
+      .discourse-no-touch & {
+        background: var(--secondary);
+        color: var(--accent-color);
+        box-shadow: 0 0 0 3px var(--button-box-shadow);
+
+        .d-icon {
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+}
+
+.select-kit.is-expanded .select-kit-body {
+  border-radius: var(--d-border-radius);
+  background-color: var(--d-content-background);
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li button:hover {
+  .discourse-no-touch & {
+    background: transparent;
+    color: var(--d-nav-color--hover);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: var(--d-nav-underline-height);
+      background: var(--d-nav-color--hover);
+    }
+  }
+}
+
+// Profile Navigation Tabs & Sub-tabs styled as Pills
+.user-main {
+  .nav-pills {
+    border-bottom: none !important;
+    gap: 0.375em !important;
+    padding: 0.25em 0 !important;
+
+    > li {
+      border-bottom: none !important;
+      margin: 0 !important;
+
+      > a,
+      > button {
+        border: none !important;
+        border-bottom: none !important;
+        border-radius: var(--d-button-border-radius, 50px) !important;
+        padding: 0.55em 1.35em !important;
+        color: var(--primary-medium) !important;
+        background: transparent !important;
+        font-weight: 500 !important;
+        transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                    color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.15s ease !important;
+        position: relative !important;
+        display: inline-flex !important;
+        align-items: center !important;
+
+        &::after,
+        &::before {
+          display: none !important;
+          content: none !important;
+        }
+
+        &:hover {
+          background-color: var(--d-hover, var(--primary-100)) !important;
+          color: var(--accent-color) !important;
+          text-decoration: none !important;
+          transform: translateY(-1px) !important;
+
+          &::after,
+          &::before {
+            display: none !important;
+            content: none !important;
+          }
+        }
+
+        &:active {
+          transform: translateY(0) !important;
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--accent-color) !important;
+          outline-offset: 2px !important;
+        }
+
+        &.active,
+        &.nav-item-selected {
+          background-color: var(--d-selected) !important;
+          color: var(--accent-color) !important;
+          font-weight: 600 !important;
+
+          &::after,
+          &::before {
+            display: none !important;
+            content: none !important;
+          }
+
+          &:hover {
+            background-color: var(--d-selected) !important;
+            color: var(--accent-color) !important;
+            transform: none !important;
+          }
+        }
+      }
+
+      &.active {
+        > a,
+        > button {
+          background-color: var(--d-selected) !important;
+          color: var(--accent-color) !important;
+          font-weight: 600 !important;
+
+          &::after,
+          &::before {
+            display: none !important;
+            content: none !important;
+          }
+
+          &:hover {
+            background-color: var(--d-selected) !important;
+            color: var(--accent-color) !important;
+            transform: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Visual hierarchy for sub-navigation (under user profile content area)
+  .user-content {
+    .nav-pills {
+      gap: 0.25em !important;
+
+      > li {
+        > a,
+        > button {
+          padding: 0.4em 1.1em !important;
+          font-size: 0.9em !important;
+        }
+      }
+    }
+  }
+}
+
