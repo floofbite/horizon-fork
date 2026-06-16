@@ -79,9 +79,65 @@ body.activate-account-page {
 }
 
 .header-dropdown-toggle.chat-header-icon .icon .chat-channel-unread-indicator {
-  border-color: var(--background-color);
+  border-color: #000000 !important;
 }
 
 .d-header-icons .badge-notification {
-  border-color: var(--background-color);
+  border-color: #000000 !important;
+}
+
+// Global Menu & Dropdown Panel overrides to match the always-black header
+.menu-panel,
+.search-menu,
+.user-menu,
+.fk-d-menu__inner-content,
+.chat-drawer {
+  background-color: #000000 !important;
+  background: #000000 !important;
+  border: 1px solid #16161a !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+
+  // Force light/white colors on black background
+  --primary: #ffffff !important;
+  --primary-medium: rgba(255, 255, 255, 0.7) !important;
+  --primary-low-mid: rgba(255, 255, 255, 0.4) !important;
+  --primary-low: rgba(255, 255, 255, 0.15) !important;
+  --header_primary: #ffffff !important;
+  --header_primary-medium: rgba(255, 255, 255, 0.7) !important;
+  --header_primary-low-mid: rgba(255, 255, 255, 0.4) !important;
+  --d-content-background: #000000 !important;
+  --d-hover: #1e1e25 !important;
+  --d-selected: #2a2a35 !important;
+
+  color: rgba(255, 255, 255, 0.85) !important;
+
+  a,
+  span,
+  div,
+  li,
+  p {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .d-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  input[type="text"],
+  input[type="search"] {
+    background-color: #151519 !important;
+    color: #ffffff !important;
+    border: 1px solid #38383e !important;
+  }
+
+  // Active / Highlighted states inside menus
+  .active,
+  .selected {
+    background-color: #2a2a35 !important;
+    color: var(--accent-color, #ffffff) !important;
+    
+    .d-icon {
+      color: var(--accent-color, #ffffff) !important;
+    }
+  }
 }

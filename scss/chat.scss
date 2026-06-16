@@ -5,7 +5,8 @@
 }
 
 .c-navbar-container {
-  background-color: var(--d-content-background);
+  background-color: #000000 !important;
+  background: #000000 !important;
 
   .full-page-chat & {
     @include viewport.from(sm) {
@@ -14,7 +15,7 @@
   }
 
   .chat-drawer.is-collapsed & {
-    background: var(--tertiary-low);
+    background: #000000 !important;
     opacity: 0.7;
   }
 }
