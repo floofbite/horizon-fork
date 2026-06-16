@@ -9,11 +9,40 @@
 body.has-full-page-chat .sidebar-wrapper,
 .sidebar-wrapper,
 .sidebar-hamburger-dropdown {
+  background: #000000 !important;
+  background-color: #000000 !important;
+
+  // Local overrides to make sidebar elements always light/readable on black
+  --primary: #ffffff !important;
+  --primary-medium: rgba(255, 255, 255, 0.7) !important;
+  --primary-low-mid: rgba(255, 255, 255, 0.4) !important;
+  --primary-low: rgba(255, 255, 255, 0.15) !important;
+  --d-sidebar-background: #000000 !important;
+  --d-sidebar-footer-fade: #000000 !important;
+  --d-sidebar-border-color: #16161a !important;
+  --d-sidebar-link-color: rgba(255, 255, 255, 0.75) !important;
+  --d-sidebar-active-color: #ffffff !important;
+  --d-sidebar-suffix-color: rgba(255, 255, 255, 0.4) !important;
+  --d-sidebar-link-icon-color: rgba(255, 255, 255, 0.65) !important;
+  --d-sidebar-header-color: rgba(255, 255, 255, 0.4) !important;
+  --d-sidebar-header-icon-color: rgba(255, 255, 255, 0.4) !important;
+  --d-sidebar-active-background: #1e1e25 !important;
+  --d-sidebar-highlight-hover-background: #151519 !important;
+  --d-sidebar-highlight-hover-icon: #ffffff !important;
+  --d-sidebar-highlight-color: #ffffff !important;
+  --d-sidebar-highlight-background: #1e1e25 !important;
+  --d-sidebar-prefix-background: #1e1e25 !important;
+  --d-sidebar-active-prefix-background: #2a2a35 !important;
+  --d-sidebar-highlight-prefix-background: #2a2a35 !important;
+  --d-selected: #2a2a35 !important;
+
   @include viewport.until(lg) {
-    background: var(--secondary);
+    background: #000000 !important;
+    background-color: #000000 !important;
 
     .sidebar-footer-wrapper {
-      background: var(--secondary);
+      background: #000000 !important;
+      background-color: #000000 !important;
 
       .sidebar-footer-container::before {
         display: none;
@@ -21,9 +50,9 @@ body.has-full-page-chat .sidebar-wrapper,
     }
   }
 
-  .has-full-page-chat &,
-  .has-full-page-chat & .sidebar-footer-wrapper {
-    background: transparent;
+  .sidebar-footer-wrapper {
+    background: #000000 !important;
+    background-color: #000000 !important;
   }
 
   .sidebar-container {
@@ -114,4 +143,14 @@ body.has-full-page-chat .sidebar-wrapper,
 
 .sidebar-theme-toggle-dropdown.select-kit.combo-box .select-kit-header {
   padding-left: 1em;
+}
+
+// Global loading indicator backgrounds set to black
+#loading-container,
+.preloader-spinner,
+.loading-indicator,
+.loading-screen,
+.preload-container {
+  background-color: #000000 !important;
+  background: #000000 !important;
 }
